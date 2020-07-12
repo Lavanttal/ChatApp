@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Chat App</title>
+</head>
+<body>
+    <section class="hero is-success">
+        <div class="hero-body">
+            <a href="settings.html">
+        <button class="button is-info is-rounded is-pulled-right">Settings</button>
+            </a>
+          <div class="container">
+            <h1 class="title">
+              Chat App
+            </h1>
+            <h1 class="room-title">
+              Room Name
+            </h1>
+        </div>
+        </div>
+      </section>
+      <ul class="messages list-group">
+        <!-- messages will be shown here -->
+      </ul>
+      <div class="container-chat">
+        <form id="messageForm">
+        <p class="help-block typing"></p>
+        <i class="" id="icon-type"></i>
+          <br />
+            <p class="control has-icons-left">
+              <input class="input is-rounded" id="messageBox" name="message" type="text" autocomplete="off" placeholder="Message">
+              <span class="icon is-small is-left">
+                <i class="fa fa-comment"></i>
+              </span>
+            </p>
+            <br />
+            <button class="button is-primary is-fullwidth">Submit</button>
+          </form>
+          <br />
+          <h1 id="user-name">
+          </h1>
+          <br />
+          <p>Please follow our guidelines:</p>
+          <p>- Appropiate username.</p>
+          <p>- Appropiate messages.</p>
+          <p>
+          <strong>- Have fun!</strong>
+          </p>
+</div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
+<script src="js/rooms.js"></script>
+<script src="js/app.js"></script>
