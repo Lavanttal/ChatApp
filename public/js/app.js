@@ -1,7 +1,9 @@
 var socket = io();
 // listen for server connection
 // get query params from url
-var name = getQueryVariable("name") || 'Usernameless';
+
+var name = getQueryVariable("name").replace(/\//g, '&#x2F;');
+
 var room = getQueryVariable("room") || 'global chat';
 
 $(".room-title").text("Room:" + " " + room);
